@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
 
-    var descriptionData = arrayOf("南港站", "市府站", "國父紀念館站", "忠孝復興站")
+    var descriptionData = arrayOf("南港站", "市府站", "國父站", "忠孝復興站")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
