@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#062330"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="40dp"
+    android:paddingEnd="50dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="90dp"
+    android:scrollbarStyle="insideInset"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    tools:context=".MainActivity">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <!--Progress Bar created-->
+                <com.kofigyan.stateprogressbar.StateProgressBar
+                    android:id="@+id/spb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:spb_animateToCurrentProgressState="true"
+                    app:spb_checkStateCompleted="true"
+                    app:spb_currentStateDescriptionColor="#0F9D58"
+                    app:spb_currentStateNumber="one"
+                    app:spb_maxStateNumber="four"
+                    app:spb_stateBackgroundColor="#BDBDBD"
+                    app:spb_stateDescriptionColor="#808080"
+                    app:spb_stateForegroundColor="#0F9D58"
+                    app:spb_stateNumberBackgroundColor="#808080"
+                    app:spb_stateNumberForegroundColor="#eeeeee" />
+
+                <!--Button to go on next step-->
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="NEXT" />
+
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
